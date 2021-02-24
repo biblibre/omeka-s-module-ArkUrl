@@ -4,6 +4,12 @@ namespace ArkUrl\Api\Representation;
 
 class ItemRepresentation extends \Omeka\Api\Representation\ItemRepresentation
 {
+    /**
+     * This is used by EventManagerAwareTrait to add other identifiers to the
+     * event manager
+     */
+    protected $eventIdentifier = \Omeka\Api\Representation\ItemRepresentation::class;
+
     public function siteUrl($siteSlug = null, $canonical = false)
     {
         $arkViewHelper = $this->getViewHelper('ark');
