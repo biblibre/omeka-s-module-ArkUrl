@@ -1,8 +1,10 @@
 # Ark Url
 
-Ark Url is a companion module for [Ark](https://gitlab.com/Daniel-KM/Omeka-S-module-Ark)
-that replace resources URLs by their ARK URL. So instead of `/s/site/item/1` you will get
-`/s/site/ark:/99999/bapZs2`.
+Ark Url is a companion module for
+[Ark](https://gitlab.com/Daniel-KM/Omeka-S-module-Ark) or
+[Quark](https://github.com/biblibre/omeka-s-module-Quark)
+that replace resources URLs by their ARK URL. So instead of `/s/site/item/1`
+you will get `/s/site/ark:/99999/bapZs2`.
 
 It replaces URLs for items, item sets and media. It doesn't change anything on the admin side.
 

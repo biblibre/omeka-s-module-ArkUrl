@@ -16,4 +16,9 @@ return [
             ],
         ],
     ],
+    'view_helpers' => [
+        'invokables' => [
+            'arkUrl' => View\Helper\ArkUrl::class,
+        ],
+    ],
 ];
