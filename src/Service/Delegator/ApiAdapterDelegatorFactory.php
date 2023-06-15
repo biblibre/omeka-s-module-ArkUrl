@@ -19,7 +19,8 @@ class ApiAdapterDelegatorFactory implements DelegatorFactoryInterface
         MediaAdapter::class => MediaAdapterDelegator::class,
     ];
 
-    public function __invoke(ContainerInterface $container, $name, callable $callback, array $options = null) {
+    public function __invoke(ContainerInterface $container, $name, callable $callback, array $options = null)
+    {
         if (isset($this->delegators[$name])) {
             $moduleManager = $container->get('Omeka\ModuleManager');
             if ($this->moduleIsActive($moduleManager, 'Quark') || $this->moduleIsActive($moduleManager, 'Ark')) {
