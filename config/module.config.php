@@ -20,5 +20,10 @@ return [
         'invokables' => [
             'arkUrl' => View\Helper\ArkUrl::class,
         ],
+        'delegators' => [
+            'resourcePageBlocks' => [
+                Service\Delegator\ViewHelperResourcePageBlocksDelegatorFactory::class,
+            ],
+        ],
     ],
 ];
